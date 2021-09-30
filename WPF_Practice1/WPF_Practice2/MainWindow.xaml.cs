@@ -81,6 +81,7 @@ namespace WPF_Practice2
 
         private void PopulateComboBox(List<ClassPopulation> cp)
         {
+            comboBox.Items.Clear();
             comboBox.Items.Add("All");
             comboBox.SelectedItem = 0;
 
@@ -95,7 +96,7 @@ namespace WPF_Practice2
 
         private void buttonReset_Click(object sender, RoutedEventArgs e)
         {
-            comboBox.SelectedItem = 0;
+            comboBox.SelectedIndex = 0;
         }
 
         private void listBoxOwner_SelectionChanged(object sender, SelectionChangedEventArgs e)

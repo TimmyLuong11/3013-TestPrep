@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF_CarFilter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_CarFilter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="comboBoxYear" HorizontalAlignment="Left" Margin="141,114,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxYear_SelectionChanged"/>
+        <ComboBox x:Name="comboBoxMake" HorizontalAlignment="Center" Margin="0,114,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxMake_SelectionChanged"/>
+        <ComboBox x:Name="comboBoxColor" HorizontalAlignment="Left" Margin="550,114,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxColor_SelectionChanged"/>
+        <Label Content="Year" HorizontalAlignment="Left" Margin="185,88,0,0" VerticalAlignment="Top"/>
+        <Label Content="Make" HorizontalAlignment="Center" Margin="0,83,0,0" VerticalAlignment="Top"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="591,83,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="ListBoxCar" Margin="0,168,0,0"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="44,115,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>
