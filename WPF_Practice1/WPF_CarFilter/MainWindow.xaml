@@ -10,12 +10,21 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://cdn.discordapp.com/attachments/859216013215924227/895167330030616646/Welcome_Back.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
-        <ComboBox x:Name="comboBoxYear" HorizontalAlignment="Left" Margin="182,109,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxYear_SelectionChanged"/>
-        <ComboBox x:Name="comboBoxMake" HorizontalAlignment="Center" Margin="0,114,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxMake_SelectionChanged"/>
-        <ComboBox x:Name="comboBoxColor" HorizontalAlignment="Left" Margin="550,114,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxColor_SelectionChanged"/>
-        <Label Content="Year" HorizontalAlignment="Left" Margin="226,83,0,0" VerticalAlignment="Top"/>
-        <Label Content="Make" HorizontalAlignment="Center" Margin="0,83,0,0" VerticalAlignment="Top"/>
-        <Label Content="Color" HorizontalAlignment="Left" Margin="591,83,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxYear" HorizontalAlignment="Left" Margin="322,122,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxYear_SelectionChanged"/>
+        <ComboBox x:Name="comboBoxMake" HorizontalAlignment="Left" Margin="455,122,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxMake_SelectionChanged"/>
+        <ComboBox x:Name="comboBoxColor" HorizontalAlignment="Left" Margin="588,122,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBoxColor_SelectionChanged"/>
+        <Label Content="Year" HorizontalAlignment="Left" Margin="366,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.277"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Make" HorizontalAlignment="Left" Margin="495,91,0,0" VerticalAlignment="Top"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="629,91,0,0" VerticalAlignment="Top"/>
         <ListBox x:Name="ListBoxCar" Margin="226,168,0,0"/>
         <Button Content="Reset" HorizontalAlignment="Left" Margin="80,176,0,0" VerticalAlignment="Top" Click="Button_Click"/>
 
